@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <RootNamespace>SpellBook.Backend.Worker</RootNamespace>
+    <AssemblyName>SpellBook.Backend.Worker</AssemblyName>
+    <UserSecretsId>dotnet-SpellBook.Backend.Worker-8ab51004-a98c-49b3-b23f-cfb61a1a5891</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting"/>
+  </ItemGroup>
+
+</Project>

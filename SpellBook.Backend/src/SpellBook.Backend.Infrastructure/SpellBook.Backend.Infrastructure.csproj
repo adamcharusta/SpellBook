@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>SpellBook.Backend.Infrastructure</RootNamespace>
+    <AssemblyName>SpellBook.Backend.Infrastructure</AssemblyName>
+  </PropertyGroup>
+
+</Project>
