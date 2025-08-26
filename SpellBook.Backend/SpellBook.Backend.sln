@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solutionItems", "solutionIt
 		Dockerfile.worker = Dockerfile.worker
 		global.json = global.json
 		..\docker-compose.yaml = ..\docker-compose.yaml
+		..\.env = ..\.env
+		..\.env.example = ..\.env.example
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellBook.Backend.Domain", "src\SpellBook.Backend.Domain\SpellBook.Backend.Domain.csproj", "{7BB5C3B7-6EDE-4B17-9F4F-A3B6A35293D0}"

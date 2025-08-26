@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.Extensions.Hosting"/>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SpellBook.Backend.Contracts\SpellBook.Backend.Contracts.csproj"/>
+  </ItemGroup>
+
 </Project>

@@ -5,4 +5,8 @@
     <AssemblyName>SpellBook.Backend.Contracts</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SpellBook.Backend.Application\SpellBook.Backend.Application.csproj"/>
+  </ItemGroup>
+
 </Project>

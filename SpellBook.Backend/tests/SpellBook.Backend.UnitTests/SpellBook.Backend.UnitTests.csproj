@@ -15,4 +15,12 @@
     <PackageReference Include="xunit.runner.visualstudio"/>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\SpellBook.Backend.Application\SpellBook.Backend.Application.csproj"/>
+    <ProjectReference Include="..\..\src\SpellBook.Backend.Contracts\SpellBook.Backend.Contracts.csproj"/>
+    <ProjectReference Include="..\..\src\SpellBook.Backend.Domain\SpellBook.Backend.Domain.csproj"/>
+    <ProjectReference Include="..\..\src\SpellBook.Backend.Infrastructure\SpellBook.Backend.Infrastructure.csproj"/>
+    <ProjectReference Include="..\..\src\SpellBook.Backend.Worker\SpellBook.Backend.Worker.csproj"/>
+  </ItemGroup>
+
 </Project>

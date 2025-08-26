@@ -1,25 +1,33 @@
-var builder = WebApplication.CreateBuilder(args);
+using Serilog;
+using SpellBook.Backend.Application;
+using SpellBook.Backend.Infrastructure;
+using SpellBook.Backend.Web;
 
-// Add services to the container.
+await using var log = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateLogger();
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+try
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    var builder = WebApplication.CreateBuilder(args);
+
+    builder.Services
+        .AddInfrastructureServices(builder.Configuration)
+        .AddApplicationServices()
+        .AddWebServices();
+
+    var app = builder.Build();
+
+    await app.UseWebServicesAsync();
+    app.Run();
+}
+catch (Exception ex)
+{
+    log.Fatal(ex, "Application terminated unexpectedly");
+}
+finally
+{
+    Log.CloseAndFlush();
 }
 
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
+public partial class Program;

@@ -15,4 +15,8 @@
     <PackageReference Include="xunit.runner.visualstudio"/>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\SpellBook.Backend.Web\SpellBook.Backend.Web.csproj"/>
+  </ItemGroup>
+
 </Project>

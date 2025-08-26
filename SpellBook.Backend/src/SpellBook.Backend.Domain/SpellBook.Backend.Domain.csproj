@@ -5,4 +5,8 @@
     <AssemblyName>SpellBook.Backend.Domain</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MediatR"/>
+  </ItemGroup>
+
 </Project>
